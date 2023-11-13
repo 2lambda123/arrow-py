@@ -488,6 +488,11 @@ class TestIcelandicLocale:
         assert self.locale._format_timeframe("second", -1) == "sekúndu"
         assert self.locale._format_timeframe("second", 1) == "sekúndu"
 
+        assert self.locale._format_timeframe("now", 0) == "rétt í þessu"
+
+        assert self.locale._format_timeframe("second", -1) == "sekúndu"
+        assert self.locale._format_timeframe("second", 1) == "sekúndu"
+
         assert self.locale._format_timeframe("minute", -1) == "einni mínútu"
         assert self.locale._format_timeframe("minute", 1) == "eina mínútu"
 
