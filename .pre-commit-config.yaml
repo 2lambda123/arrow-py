@@ -18,7 +18,7 @@ repos:
         args: [requirements/requirements.txt, requirements/requirements-docs.txt, requirements/requirements-tests.txt]
       - id: trailing-whitespace
   - repo: https://github.com/PyCQA/isort
-    rev: 5.13.2
+    rev: 6.0.0
     hooks:
       - id: isort
   - repo: https://github.com/asottile/pyupgrade
@@ -38,7 +38,7 @@ repos:
       - id: rst-inline-touching-normal
       - id: text-unicode-replacement-char
   - repo: https://github.com/psf/black
-    rev: 24.10.0
+    rev: 25.1.0
     hooks:
       - id: black
         args: [--safe, --quiet, --target-version=py36]
